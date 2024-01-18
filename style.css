@@ -1,0 +1,51 @@
+body {
+  background-image: url("backimage.jpg"); /* Use a relative path for better portability */
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #64b9a7;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+#navbar li {
+  position: relative;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #0c0000;
+  transition: color 0.3s ease-in-out;
+}
+
+#navbar a:hover {
+  color: #faf6f6;
+}
+
+#navbar.scrolled {
+  background-color: #054181;
+  color: #ee0808;
+}
+
+#navbar.scrolled a {
+  color: #1b5ce9a9;
+}
